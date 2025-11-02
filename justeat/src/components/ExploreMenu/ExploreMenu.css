@@ -1,0 +1,75 @@
+.explore-menu{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.explore-menu h1{
+    color: #414c72;
+    font-weight: 500;
+}
+
+.explore-menu p{
+    color:  #414c72;
+    max-width: 60%;
+}
+
+.explore-menu-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+    margin: 20px 0px;
+    overflow-x: scroll;
+}
+
+.explore-menu-list::-webkit-scrollbar{
+    display: none;
+}
+
+.explore-menu-list-item img {
+    width: 7.5vw;
+    height: 7.5vw;
+    min-width: 80px;
+    min-height: 80px;
+    max-width: 120px;
+    max-height: 120px;
+    cursor: pointer;
+    border-radius: 50%;
+    object-fit: cover;     /* This ensures image fills the circle evenly */
+    transition: 0.2s;
+    margin-top: 7px;
+}
+
+
+.explore-menu-list-item img:hover{
+    transform: scale(1.1);
+}
+
+.explore-menu-list-item p{
+    margin-top: 10px;
+    color: black;
+    font-size: max(1.4vw, 16px);
+    cursor: pointer;
+}
+
+.explore-menu hr{
+    margin: 10px 0px;
+    height: 2px;
+    background-color: rgb(189, 187, 187);
+    border: none;
+}
+
+.explore-menu-list-item .active{
+    border: 4px solid orangered;
+    padding: 2px;
+}
+
+@media (max-width: 1050px) {
+    .explore-menu-text{
+        max-width: 100%;
+        font-size: 14px;
+    }
+    
+}
