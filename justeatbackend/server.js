@@ -10,10 +10,16 @@ import orderRouter from "./routes/orderRoute.js"
 // app config
 const app = express()
 const port = 4000
+const corsConfig = {
+    origin: "*",
+    methods: ["GET", "POST", "PUT", "DELETE"],
+};
+
+app.options("", cors(corsConfig));
 
 //middleware
 app.use(express.json())
-app.use(cors())
+app.use(cors(corsConfig))
 
 //db connection
 connectDB();
