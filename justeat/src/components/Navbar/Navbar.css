@@ -70,6 +70,7 @@ background-color:antiquewhite
 
 .navbar-profile{
     position: relative;
+    margin-right: 7px;
     cursor: pointer;
 }
 
